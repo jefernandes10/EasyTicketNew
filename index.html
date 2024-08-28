@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/img/Pink_Creative_Ticket_Brush_Strokes_Motivational_Instagram_Post-removebg-preview.1.png" alt="logo" class="logo">
+
+        <!-- Formulário de Cadastro do Cliente -->
+        <div id="cadastroCliente">
+            <h2>Cadastrar Clientes</h2>
+            <form id="formCadastroCliente">
+                <label for="nomeCliente">Nome:</label>
+                <input type="text" id="nomeCliente" required>
+                <label for="emailCliente">Email:</label>
+                <input type="email" id="emailCliente" required>
+                <button type="submit">Cadastrar Cliente</button>
+            </form>
+        </div>
+
+        <!-- Seleção de Eventos -->
+        <div id="eventos">
+            <h2>Escolha seu Evento</h2>
+            <div class="eventos-lista">
+                <div class="evento" data-nome="Samba pra Geral" data-preco="150">
+                    <img src="/img/42816a.jpeg" alt="Show de Rock">
+                    <h3>Show de Rock</h3>
+                    <p>Preço: R$150</p>
+                    <button class="btnComprar">Comprar</button>
+                </div>
+                <div class="evento" data-nome="Mainha é uma Resenha" data-preco="100">
+                    <img src="/img/668c40c1778ff-lg.jpg" alt="Peça de Teatro">
+                    <h3>Peça de Teatro</h3>
+                    <p>Preço: R$100</p>
+                    <button class="btnComprar">Comprar</button>
+                </div>
+                <div class="evento" data-nome="Festival de Blues & Jazz" data-preco="80">
+                    <img src="/img/gera_thumb.png" alt="Festival de Cinema">
+                    <h3>Festival de Cinema</h3>
+                    <p>Preço: R$80</p>
+                    <button class="btnComprar">Comprar</button>
+                </div>
+                <div class="evento" data-nome="Concerto orquestra Sinfônica Criança Cidadã" data-preco="80">
+                    <img src="/img/GQdt-QWW4AAfX_0.jfif" alt="Festival de Cinema">
+                    <h3>Festival de Cinema</h3>
+                    <p>Preço: R$80</p>
+                    <button class="btnComprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de Compras -->
+        <div id="compras">
+            <h2>Ingressos Comprados</h2>
+            <ul id="listaCompras"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
